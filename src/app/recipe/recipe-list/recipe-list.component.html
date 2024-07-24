@@ -1,0 +1,7 @@
+<!-- <p>recipe-list works!</p> -->
+<!-- <app-recipe-item></app-recipe-item> -->
+<button class="btn btn-primary btn-sm-block"[routerLink]="['new']">Add new</button>
+<div class ='list-group'>
+    <app-recipe-item  [recData]="recipe" [recIndex]="i" *ngFor="let recipe of recipeList ; let i = index"></app-recipe-item>
+    <!-- <app-recipe-item [recData]="recipe"  (itemClickHandler)="catchListEvent($event)"  *ngFor="let recipe of recipeList"></app-recipe-item> -->
+</div>

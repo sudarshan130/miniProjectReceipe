@@ -1,0 +1,17 @@
+
+
+<div class="row">
+    <div class="col-6">
+        <app-recipe-list ></app-recipe-list>
+        <!-- <app-recipe-list (listEventHandler)="catchListEvent($event)"></app-recipe-list> -->
+    </div>
+    <div class="col-6">
+        <router-outlet></router-outlet>
+        <!-- <app-recipe-details [recDataFromParent]="currentSelectedRecipe" *ngIf="currentSelectedRecipe; else elsepart"></app-recipe-details>
+        <ng-template #elsepart>
+            <h1>Please Select Recipe</h1>
+          </ng-template>
+    </div> -->
+</div>
+
+
